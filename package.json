@@ -1,0 +1,22 @@
+{
+  "name": "deck",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Slidev decks. One folder per talk; run/build/export via the scripts below.",
+  "scripts": {
+    "dev": "slidev debezium-neo4j/slides.md --open",
+    "build": "slidev build debezium-neo4j/slides.md --out dist/debezium-neo4j",
+    "export": "slidev export debezium-neo4j/slides.md --output exports/debezium-neo4j.pdf",
+    "dev:debezium-neo4j": "slidev debezium-neo4j/slides.md --open",
+    "build:debezium-neo4j": "slidev build debezium-neo4j/slides.md --out dist/debezium-neo4j",
+    "export:debezium-neo4j": "slidev export debezium-neo4j/slides.md --output exports/debezium-neo4j.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "latest",
+    "@slidev/theme-default": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "latest"
+  }
+}

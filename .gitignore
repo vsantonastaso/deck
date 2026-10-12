@@ -1,0 +1,8 @@
+node_modules/
+dist/
+exports/
+*.local
+.DS_Store
+.slidev/
+.idea/
+deck.iml
