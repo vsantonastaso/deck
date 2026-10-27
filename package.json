@@ -5,12 +5,18 @@
   "type": "module",
   "description": "Slidev decks. One folder per talk; run/build/export via the scripts below.",
   "scripts": {
-    "dev": "slidev debezium-neo4j/slides.md --open",
+    "dev": "node scripts/dev.mjs",
     "build": "slidev build debezium-neo4j/slides.md --out dist/debezium-neo4j",
     "export": "slidev export debezium-neo4j/slides.md --output exports/debezium-neo4j.pdf",
     "dev:debezium-neo4j": "slidev debezium-neo4j/slides.md --open",
     "build:debezium-neo4j": "slidev build debezium-neo4j/slides.md --out dist/debezium-neo4j",
-    "export:debezium-neo4j": "slidev export debezium-neo4j/slides.md --output exports/debezium-neo4j.pdf"
+    "export:debezium-neo4j": "slidev export debezium-neo4j/slides.md --output exports/debezium-neo4j.pdf",
+    "dev:debezium-3.6": "slidev debezium-3.6/slides.md --open",
+    "build:debezium-3.6": "slidev build debezium-3.6/slides.md --out dist/debezium-3.6",
+    "export:debezium-3.6": "slidev export debezium-3.6/slides.md --output exports/debezium-3.6.pdf",
+    "dev:debezium-platform": "slidev debezium-platform/slides.md --open",
+    "build:debezium-platform": "slidev build debezium-platform/slides.md --out dist/debezium-platform",
+    "export:debezium-platform": "slidev export debezium-platform/slides.md --output exports/debezium-platform.pdf"
   },
   "dependencies": {
     "@slidev/cli": "latest",
