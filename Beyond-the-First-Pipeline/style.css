@@ -1,0 +1,291 @@
+/* Light theme, compact font */
+
+:root {
+  --slidev-theme-primary: #2563eb;
+  --slidev-theme-background: #ffffff;
+}
+
+/* Base layout styling */
+.slidev-layout {
+  background-color: #ffffff !important;
+  background-image:
+    radial-gradient(ellipse 60% 55% at 0% 0%, rgba(143, 212, 63, 0.10), transparent 70%),
+    radial-gradient(ellipse 60% 55% at 100% 100%, rgba(63, 191, 224, 0.10), transparent 70%) !important;
+  color: #1f2937 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 3.5rem 3.5rem 3.5rem !important;
+  font-size: 0.85rem;
+}
+
+/* Headings */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  color: #111827 !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.slidev-layout h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6b7280 !important;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #374151 !important;
+}
+
+/* Paragraphs and lists */
+.slidev-layout p {
+  text-align: center !important;
+  margin: 0.4rem auto;
+  max-width: 90%;
+  color: #374151 !important;
+  font-size: 0.85rem;
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  text-align: left !important;
+  display: inline-block;
+  margin: 0.4rem auto !important;
+  color: #374151 !important;
+  font-size: 0.85rem;
+}
+
+.slidev-layout li {
+  margin-bottom: 0.4rem;
+}
+
+/* Inline code */
+.slidev-layout code {
+  background-color: #eff6ff !important;
+  color: #1d4ed8 !important;
+  padding: 0.1rem 0.3rem !important;
+  border-radius: 4px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 0.85em !important;
+  border: 1px solid #dbeafe !important;
+}
+
+/* Code blocks */
+.slidev-layout .slidev-code,
+.slidev-layout pre,
+.slidev-layout .shiki {
+  text-align: left !important;
+  margin: 0.4rem auto !important;
+  display: inline-block !important;
+  max-width: 95%;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #f6f8fa !important;
+  font-size: 0.7rem !important;
+  padding: 0.35rem 0.55rem !important;
+  line-height: 1.3 !important;
+}
+
+.slidev-layout pre code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+}
+
+.slidev-layout strong {
+  color: #111827 !important;
+}
+
+/* Tables */
+.slidev-layout table {
+  margin: 0.5rem auto;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.slidev-layout th,
+.slidev-layout td {
+  text-align: left !important;
+  padding: 0.35rem 0.7rem !important;
+  border: 1px solid #e5e7eb !important;
+  color: #374151;
+}
+
+.slidev-layout th {
+  background-color: #f3f4f6 !important;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Left-aligned content inside grids / text-left containers */
+.slidev-layout .text-left p,
+.slidev-layout .text-left h1,
+.slidev-layout .text-left h2,
+.slidev-layout .text-left h3,
+.slidev-layout .text-left h4,
+.slidev-layout .grid p,
+.slidev-layout .grid h1,
+.slidev-layout .grid h2,
+.slidev-layout .grid h3,
+.slidev-layout .grid h4 {
+  text-align: left !important;
+}
+
+/* Soft card used for grouping points */
+.slidev-layout .card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  background-color: #fbfbfd;
+}
+
+/* Centering Mermaid diagrams, sized to fit the slide */
+.slidev-layout .mermaid {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0.6rem auto !important;
+  width: 100%;
+  background-color: #fafafa;
+  background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+  background-size: 16px 16px;
+  border: 1px solid #eef0f3;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+
+.slidev-layout .mermaid svg {
+  margin: 0 auto !important;
+  max-height: 340px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* NOTE: Mermaid v12 renders each diagram inside a Shadow DOM, so node /
+   edge styling and the flowing-edge animation cannot be applied from here.
+   Those live in each diagram's `themeCSS` (in the %%{init}%% block in
+   slides.md), which Mermaid injects into the shadow SVG. */
+
+/* Cover layout */
+.slidev-layout.cover {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slidev-layout.cover h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.8rem;
+}
+
+.slidev-layout.cover h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #6b7280 !important;
+}
+
+/* Footer images are not affected by slide centering */
+footer img {
+  display: block;
+}
+
+/* Entrance animation for every card; cards in a grid are staggered.
+   Only a "from" keyframe is used so each card keeps its own final opacity. */
+@keyframes dbz-rise {
+  from { opacity: 0; transform: translateY(18px) scale(0.97); }
+}
+
+.slidev-layout .card {
+  animation: dbz-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.slidev-layout .grid > .card:nth-child(1),
+.slidev-layout .flex-col > .card:nth-child(1) { animation-delay: 0.1s; }
+.slidev-layout .grid > .card:nth-child(2),
+.slidev-layout .flex-col > .card:nth-child(2) { animation-delay: 0.3s; }
+.slidev-layout .grid > .card:nth-child(3),
+.slidev-layout .flex-col > .card:nth-child(3) { animation-delay: 0.5s; }
+.slidev-layout .grid > .card:nth-child(4),
+.slidev-layout .flex-col > .card:nth-child(4) { animation-delay: 0.7s; }
+.slidev-layout .grid > .card:nth-child(5),
+.slidev-layout .flex-col > .card:nth-child(5) { animation-delay: 0.9s; }
+.slidev-layout .grid > .card:nth-child(6),
+.slidev-layout .flex-col > .card:nth-child(6) { animation-delay: 1.1s; }
+
+/* Same entrance for Mermaid diagrams */
+.slidev-layout .mermaid {
+  animation: dbz-rise 1.5s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+/* Card that follows a diagram: wait for the diagram to finish arriving */
+.slidev-layout .card.card-after {
+  animation-delay: 1.3s;
+}
+
+/* Slide titles: green -> teal -> blue gradient text (matches the logo) */
+.slidev-layout h1 {
+  width: fit-content !important;
+  max-width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: linear-gradient(90deg, #5da52a 0%, #1fa59a 50%, #1b9fd0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent !important;
+}
+
+/* Click-revealed pills: same entrance as the cards, started by the click
+   (Slidev removes .slidev-vclick-hidden from the wrapper on reveal) */
+.slidev-layout .pills:not(.slidev-vclick-hidden) > span {
+  animation: dbz-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.slidev-layout .pills > span:nth-child(1) { animation-delay: 0.05s; }
+.slidev-layout .pills > span:nth-child(2) { animation-delay: 0.25s; }
+.slidev-layout .pills > span:nth-child(3) { animation-delay: 0.45s; }
+
+/* Agenda rows — vertical list with gradient left border */
+.slidev-layout .agenda-row {
+  position: relative;
+  padding: 0.85rem 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.slidev-layout .agenda-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--bar, linear-gradient(180deg, #5da52a 0%, #1fa59a 50%, #1b9fd0 100%));
+}
+
+.slidev-layout .flex-col > .agenda-row:last-child {
+  border-bottom: none;
+}

@@ -14,9 +14,9 @@
     "dev:debezium-3.6": "slidev debezium-3.6/slides.md --open",
     "build:debezium-3.6": "slidev build debezium-3.6/slides.md --out dist/debezium-3.6",
     "export:debezium-3.6": "slidev export debezium-3.6/slides.md --output exports/debezium-3.6.pdf",
-    "dev:debezium-platform": "slidev debezium-platform/slides.md --open",
-    "build:debezium-platform": "slidev build debezium-platform/slides.md --out dist/debezium-platform",
-    "export:debezium-platform": "slidev export debezium-platform/slides.md --output exports/debezium-platform.pdf"
+    "dev:Beyond-the-First-Pipeline": "slidev Beyond-the-First-Pipeline/slides.md --open",
+    "build:Beyond-the-First-Pipeline": "slidev build Beyond-the-First-Pipeline/slides.md --out dist/Beyond-the-First-Pipeline",
+    "export:Beyond-the-First-Pipeline": "slidev export Beyond-the-First-Pipeline/slides.md --output exports/Beyond-the-First-Pipeline.pdf"
   },
   "dependencies": {
     "@slidev/cli": "latest",

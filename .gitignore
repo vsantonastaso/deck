@@ -6,3 +6,5 @@ exports/
 .slidev/
 .idea/
 deck.iml
+/.bob/
+/private/

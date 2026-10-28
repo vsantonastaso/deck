@@ -28,6 +28,7 @@ jobs:
         run: |
           REPO="${GITHUB_REPOSITORY#*/}"
           npx slidev build debezium-neo4j/slides.md --base "/$REPO/debezium-neo4j/" --out "$PWD/dist/debezium-neo4j"
+          npx slidev build Beyond-the-First-Pipeline/slides.md --base "/$REPO/Beyond-the-First-Pipeline/" --out "$PWD/dist/Beyond-the-First-Pipeline"
       - name: Index page
         run: |
           mkdir -p dist

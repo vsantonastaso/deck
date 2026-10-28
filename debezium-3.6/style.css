@@ -1,0 +1,171 @@
+/* Light theme, compact font */
+
+:root {
+  --slidev-theme-primary: #2563eb;
+  --slidev-theme-background: #ffffff;
+}
+
+/* Base layout styling */
+.slidev-layout {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 3.5rem 3.5rem 3.5rem !important;
+  font-size: 0.85rem;
+}
+
+/* Headings */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  color: #111827 !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.slidev-layout h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6b7280 !important;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #374151 !important;
+}
+
+/* Paragraphs and lists */
+.slidev-layout p {
+  text-align: center !important;
+  margin: 0.4rem auto;
+  max-width: 90%;
+  color: #374151 !important;
+  font-size: 0.85rem;
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  text-align: left !important;
+  display: inline-block;
+  margin: 0.4rem auto !important;
+  color: #374151 !important;
+  font-size: 0.85rem;
+}
+
+.slidev-layout li {
+  margin-bottom: 0.3rem;
+}
+
+/* Inline code */
+.slidev-layout code {
+  background-color: #eff6ff !important;
+  color: #1d4ed8 !important;
+  padding: 0.1rem 0.3rem !important;
+  border-radius: 4px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 0.85em !important;
+  border: 1px solid #dbeafe !important;
+}
+
+/* Code blocks */
+.slidev-layout .slidev-code,
+.slidev-layout pre,
+.slidev-layout .shiki {
+  text-align: left !important;
+  margin: 0.4rem auto !important;
+  display: inline-block !important;
+  max-width: 95%;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #f6f8fa !important;
+  font-size: 0.7rem !important;
+  padding: 0.35rem 0.55rem !important;
+  line-height: 1.3 !important;
+}
+
+.slidev-layout pre code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+}
+
+.slidev-layout strong {
+  color: #111827 !important;
+}
+
+/* Tables */
+.slidev-layout table {
+  margin: 0.5rem auto;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.slidev-layout th,
+.slidev-layout td {
+  text-align: left !important;
+  padding: 0.35rem 0.7rem !important;
+  border: 1px solid #e5e7eb !important;
+  color: #374151;
+}
+
+.slidev-layout th {
+  background-color: #f3f4f6 !important;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Left-aligned content inside grids / text-left containers */
+.slidev-layout .text-left p,
+.slidev-layout .text-left h1,
+.slidev-layout .text-left h2,
+.slidev-layout .text-left h3,
+.slidev-layout .text-left h4,
+.slidev-layout .grid p,
+.slidev-layout .grid h1,
+.slidev-layout .grid h2,
+.slidev-layout .grid h3,
+.slidev-layout .grid h4 {
+  text-align: left !important;
+}
+
+/* Cover layout */
+.slidev-layout.cover {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slidev-layout.cover h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.8rem;
+}
+
+.slidev-layout.cover h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #6b7280 !important;
+}
+
+/* Footer images are not affected by slide centering */
+footer img {
+  display: block;
+}
